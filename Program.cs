@@ -1,4 +1,5 @@
 ﻿using CsharpPart1.Math;
+//using CsharpPart1.Exercises;
 using System;
 
 namespace CsharpPart1
@@ -7,12 +8,16 @@ namespace CsharpPart1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            var calcDemo = new Calculator();
+            var ex1 = new ExerciseConditional();
+            ex1.ConditionalFour();
+           // Console.WriteLine("Hello World!");
+            //var calcDemo = new Calculator();
 
-            int[] numbers = new int[3]; // Fixed
-            int[] nums = new int[3] { 1, 2, 3 }; // Initialized  // better to use var
+            //int[] numbers = new int[3]; // Fixed
+            //int[] nums = new int[3] { 1, 2, 3 }; // Initialized  // better to use var
 
+            //var verbatumStr = @"Hi John,de/"; // This does add the tabs in :'(
+            //Console.WriteLine(verbatumStr);
 
         }
     }

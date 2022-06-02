@@ -3,12 +3,13 @@
     public class Person
     {
         public string FisrtName;
-        public string LastName;
 
         public Person(string lastName)
         {
             LastName = lastName;
         }
+
+        public string LastName { get; private set; }
     }
     // Comment single line, don't use multi live with /*   */
 

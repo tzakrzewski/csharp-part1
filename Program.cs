@@ -8,8 +8,8 @@ namespace CsharpPart1
     {
         static void Main(string[] args)
         {
-            var ex1 = new ExercisesLoop();
-            ex1.LoopFive();
+            var ex1 = new ExercisesArrayList();
+            ex1.ArrayListFive();
 
            // Console.WriteLine("Hello World!");
             //var calcDemo = new Calculator();

@@ -2,7 +2,7 @@
 
 namespace CsharpPart1
 {
-    public class ExerciseConditional
+    public class ExercisesConditional
     {
         public int UserInput;
         public string UserText;

@@ -9,7 +9,7 @@ namespace CsharpPart1
         static void Main(string[] args)
         {
             var ex1 = new ExercisesText();
-            ex1.TextThree();
+            ex1.TextFive();
 
            // Console.WriteLine("Hello World!");
             //var calcDemo = new Calculator();

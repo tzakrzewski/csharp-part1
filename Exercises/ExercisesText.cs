@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace CsharpPart1
@@ -79,6 +80,56 @@ namespace CsharpPart1
                 Console.WriteLine("Valid");
             else
                 Console.WriteLine("InValid");
+        }
+
+        public void TextFour()
+        {
+            Console.WriteLine("Enter Words");
+            var input = Console.ReadLine();
+
+            if (string.IsNullOrWhiteSpace(input))
+            {
+                Console.WriteLine("Error");
+                return;
+            } 
+
+            var words = input.ToLower().Split(" ");
+            foreach(var word in words)
+                Console.Write(Char.ToUpper(word[0]) + word.Substring(1));
+        }
+
+        public void TextFive()
+        {
+            Console.WriteLine("Enter an English word: ");
+            var input = Console.ReadLine();
+
+            if (string.IsNullOrWhiteSpace(input))
+            {
+                Console.WriteLine("Error");
+                return;
+            }
+
+            input.ToLower();
+            var vowelCounts = 0;
+            vowelCounts += input.Count(character => character == 'a');
+            vowelCounts += input.Count(character => character == 'e');
+            vowelCounts += input.Count(character => character == 'i');
+            vowelCounts += input.Count(character => character == 'o');
+            vowelCounts += input.Count(character => character == 'u');
+
+            Console.WriteLine("Total Vowel Count: " + vowelCounts);
+
+            //var input = Console.ReadLine().ToLower();
+
+            //var vowels = new List<char>(new char[] { 'a', 'e', 'o', 'u', 'i' });
+            //var vowelsCount = 0;
+            //foreach (var character in input)
+            //{
+            //    if (vowels.Contains(character))
+            //        vowelsCount++;
+            //}
+
+            //Console.WriteLine(vowelsCount);
         }
     }
 }
